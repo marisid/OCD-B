@@ -6,9 +6,9 @@ A platform for writing and sharing reviews of coding resources. Available online
 
 - Clone this repo and `cd` into it
 - Run `npm install` to install all dependencies
-- Run npm start to start the server
-- Navigate to http://localhost:4000/ in your browser
-- To run the tests, run npm test
+- Run `npm start` to start the server
+- Navigate to `http://localhost:4000/` in your browser
+- To run the tests, run `npm test`
 
 ## General objectives
 

@@ -20,11 +20,21 @@ header {
 }
 
 .greeting{
+  font-size: 1.6rem;
+  height: 60px;
   width: 250px;
   margin-top: 30px;
-  margin-bottom: 30px;
   text-align: center;
 }
+
+.register_message {
+    height: 60px;
+    width: 80vw;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 .input_field {
   display: block;
@@ -45,6 +55,16 @@ header {
   text-align: center;
 }
 
-.register_link {
+.register_link, .login_link {
   display: block;
+}
+
+.experience_fieldset {
+  width: 180px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.experience_fieldset label {
+  font-size: 1.2rem;
 }

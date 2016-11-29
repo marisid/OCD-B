@@ -1,0 +1,50 @@
+* {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  height: 10vh;
+  width: 100vw;
+  background-color: #016064;
+  color: white;
+  padding-left: 10px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.centered{
+  margin: 0 auto;
+}
+
+.greeting{
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.input_field {
+  display: block;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.btn_submit{
+  width: 100px;
+  display: block;
+}
+
+.prompt_message {
+  width: 70vw;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register_link {
+  display: block;
+}

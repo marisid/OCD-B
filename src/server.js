@@ -10,7 +10,7 @@ const server = new Hapi.Server();
 
 server.connection (
   {
-  port: process.env.PORT || 5432
+  port: process.env.PORT || 4000
   }
 );
 
@@ -26,6 +26,13 @@ server.views ({
   path:'../public'
 });
 
+const register = {
+  method: 'POST',
+  path: '/register',
+  handler(req,reply) {
+
+  }
+}
 server.route(routes);
 
 module.exports = server;

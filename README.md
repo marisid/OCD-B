@@ -29,6 +29,12 @@ A platform for writing and sharing reviews of coding resources. Available online
 - I can see a list of reviews of a particular resource
 - I can click on a listed review to read it
 
+## Daily progress
+
+- [Tuesday](https://github.com/NodeGroup2/OCD-B/issues/11)
+- [Wednesday](https://github.com/NodeGroup2/OCD-B/issues/24)
+- [Thursday](https://github.com/NodeGroup2/OCD-B/issues/33)
+
 ## Front-end design
 
 ![](images/frontend-design.jpg)

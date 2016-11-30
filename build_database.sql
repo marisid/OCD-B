@@ -45,10 +45,10 @@ CREATE TABLE reviews (
   resource_id   INTEGER    REFERENCES resources(resource_id)
 );
 
-INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (1, 5, 'Highly recommended to all JavaScript developers' , 'A great in-depth JavaScript course that really explains how the language works under the hood. The only downside is the slow pace of the videos.' , 3, 1);
-INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (3, 5, 'Great intro to Computer Science at your own pace' , 'I loved the extensive material including videos, walkthroughs, articles and problem sets. All the CS50 staff are awesome in teaching you the CS fundamentals and problem sets are demanding but extremely useful!' , 2, 3);
-INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (2, 2, 'Not very useful' , 'It was all copy-pasting and I didn"t feel like I learnt much', 4, 4);
-INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (4, 3, 'Example summary' , 'Example description', 4, 4);
+INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (1480521059767, 5, 'Highly recommended to all JavaScript developers' , 'A great in-depth JavaScript course that really explains how the language works under the hood. The only downside is the slow pace of the videos.' , 3, 1);
+INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (1480521068767, 5, 'Great intro to Computer Science at your own pace' , 'I loved the extensive material including videos, walkthroughs, articles and problem sets. All the CS50 staff are awesome in teaching you the CS fundamentals and problem sets are demanding but extremely useful!' , 2, 3);
+INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (1480521078767, 2, 'Not very useful' , 'It was all copy-pasting and I didn"t feel like I learnt much', 4, 4);
+INSERT INTO reviews (time_stamp, rating, summary, description, user_id, resource_id) VALUES (1480521058767, 3, 'Example summary' , 'Example description', 4, 4);
 
 SELECT * FROM reviews;
 

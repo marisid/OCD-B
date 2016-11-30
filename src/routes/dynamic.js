@@ -2,9 +2,14 @@ module.exports = [
   {
     method: 'GET',
     path:'/account/',
-    handler: (request,reply) => {
-      let user = encodeURIComponent(request.query.user);
-      reply.view('index', {user});
-      }
-  },
+    config: {
+      auth: {
+        strategy: 'base'
+      },
+      handler: (request,reply) => {
+        let user = encodeURIComponent(request.auth.credentials.user);
+        reply.view('index', {user})
+        }
+    }
+  }
 ];

@@ -1,0 +1,22 @@
+{{> header}}
+<p class="centered">Add review to {{resource}}</p>
+<form id="register_form" action="/addReview" method="post">
+<p class="centered">Summary - </p>
+<input type="text" name="summary_input" value="" class="centered input_field">
+<p class="centered">Description -</p>
+<input type="text" name="description_input" value="" class="centered input_field">
+<fieldset class="experience_fieldset centered">
+  <legend>Rating</legend>
+    <input id="bad_rating" class="btn_radio" type="radio" name="rating" value="1" checked>
+    <label for="bad_rating">1 Bad   </label>
+    <input id="not_bad_rating" class="btn_radio" type="radio" name="rating" value="2">
+    <label for="not_bad_rating">2 Not bad   </label>
+    <input id="good_rating" class="btn_radio" type="radio" name="rating" value="3">
+    <label for="good_rating">3 Good   </label>
+    <input id="really_good_rating" class="btn_radio" type="radio" name="rating" value="4">
+    <label for="really_good_rating">4 Really good   </label>
+    <input id="excellent_rating" class="btn_radio" type="radio" name="rating" value="5">
+    <label for="excellent_rating">5 Excellent</label>
+</fieldset>
+<button id="add_review_btn" class="centered btn_submit" type="submit" name="register">Add Review</button>
+</form>

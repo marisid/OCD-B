@@ -43,9 +43,9 @@ Table 1: Users
 
 Table 2: Resources
 
-| :key: resource_id | title | language | source | average_rating |
-| :--- | :--- | :--- | :--- | :-- |
-|   |   |   |   |   |
+| :key: resource_id | title | language | source | url | average_rating |
+| :--- | :--- | :--- | :--- | :-- | :--|
+|   |   |   |   |   |   |
 
 Table 3: Reviews
 
@@ -57,8 +57,8 @@ Table 3: Reviews
 
 `/` and `/login` : main page, login page  
 `/register` :  registration page  
-`/?username=` : user page  
-`/addreview/?username=...&resource=...` : user page to add resource review
+`/account/?user=` : user page  
+`/addreview/?user=...&resource=...` : user page to add resource review
 
 ## Testing
 

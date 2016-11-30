@@ -16,9 +16,8 @@ module.exports = [
     path: '/register',
     handler: (req, reply) => {
       addUser((err) => {
-        console.log(req.payload);
         if(err) {
-          console.log(err);
+          throw(err);
         }
       },req.payload)
       reply().redirect('/login');

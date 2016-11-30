@@ -6,11 +6,16 @@ module.exports = [{
   handler: (request,reply) => {
     let userPageData = {
       recentReviews: {},
-      user: encodeURIComponent(request.query.user)
+      user: encodeURIComponent(request.query.user),
+      resources: {}
     }
     getData.recentReviews((error, data) => {
       if (error) throw error;
       userPageData.recentReviews = data;
+    });
+    getData.resources((error, data) => {
+      if (error) throw error;
+      userPageData.resources = data;
       reply.view('index', userPageData);
     });
   }

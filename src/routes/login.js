@@ -1,4 +1,5 @@
 const validateUser = require('../validateUser')
+
 module.exports = [
   {
     method: 'GET',
@@ -24,6 +25,7 @@ module.exports = [
     method: 'POST',
     path:'/login',
     handler: (req,reply) => {
+      // req.cookieAuth.clear(); add logout btn to replace this line
       validateUser((err,validated)=>{
         if(err){
           throw err;
@@ -31,9 +33,10 @@ module.exports = [
         if(!validated){
           reply().redirect('/login');
         } else {
-          reply.view('index');
+          req.cookieAuth.set(req.payload);
+          reply().redirect('/account/')
         }
       },req.payload);
     }
-  }
+}
 ];

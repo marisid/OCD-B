@@ -4,8 +4,9 @@ const Hapi = require('hapi');
 const inert = require('inert');
 const vision = require('vision');
 const env = require('env2')('./config.env');
-const routes = require('./routes.js')
-const handlebars = require('handlebars')
+const routes = require('./routes.js');
+const handlebars = require('handlebars');
+
 const server = new Hapi.Server();
 
 server.connection (
@@ -26,13 +27,6 @@ server.views ({
   path:'../public'
 });
 
-const register = {
-  method: 'POST',
-  path: '/register',
-  handler(req,reply) {
-
-  }
-}
 server.route(routes);
 
 module.exports = server;

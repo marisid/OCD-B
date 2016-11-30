@@ -18,14 +18,5 @@ module.exports = [
         index: 'login.html'
       }
     }
-  },
-    {
-      method: 'GET',
-      path:'/register/{file*}',
-      handler: {
-        directory: {
-          path: 'public/',
-          index: 'register.html'
-        }
-      }
-  }];
+  }
+    ];

@@ -1,8 +1,11 @@
+/*Global CSS styles*/
 * {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
+
+/*CSS styles for header*/
 
 header {
   font-weight: bold;
@@ -29,6 +32,8 @@ header {
   padding: auto;
 }
 
+/*CSS styles for login and register pages*/
+
 .container {
   width: 90vw;
   margin: 0 auto;
@@ -53,7 +58,6 @@ header {
     text-align: center;
     margin-top: 30px;
 }
-
 
 .input_field {
   display: block;
@@ -84,8 +88,29 @@ header {
   margin-bottom: 30px;
 }
 
-.experience_fieldset label {
+.radio_button_group {
   font-size: 1.2rem;
+}
+
+/*CSS styles for review form section*/
+.review_section {
+  padding-left: 10px;
+}
+
+.review_input {
+  height: 30px;
+  width: 60vw;
+}
+
+.review_textarea {
+  height: 100px;
+  width: 60vw;
+}
+
+.rating_fieldset {
+  width: 60vw;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .recent_reviews {

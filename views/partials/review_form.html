@@ -7,7 +7,7 @@
     <label class="input_text_label" for="summary_input">Description</label>
     <textarea name="description_input" class="review_textarea input_field" placeholder="Expand on your summary a bit more :-)."></textarea>
     <fieldset class="rating_fieldset">
-      <legend>Rating (out of 5)</legend>
+      <legend>Rating</legend>
         <div class="radio_button_group">
           <input id="bad_rating" class="btn_radio" type="radio" name="rating" value="1">
           <label for="bad_rating"><span class="review_stars stars_1"></label>
@@ -29,6 +29,6 @@
           <label for="excellent_rating"><span class="review_stars stars_5"></label>
         </div>
     </fieldset>
-    <button id="add_review_btn" class="btn_submit" type="submit" name="add_review">Add Review</button>
+    <button id="add_review_btn" class="btn_submit" type="submit" name="resource_title" value="{{resource}}">Add Review</button>
   </form>
 </div>

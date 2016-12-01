@@ -1,9 +1,17 @@
 <section class="resources">
   <h1>Resources</h1>
-  <ul>
+  <ul class="resources_list">
     {{#each resources}}
     <li class="resource_item">
-      <p>{{this.title}} <span>{{this.rating}}</span> <span>Add review</span></p>
+      <p class="inline_item">
+        <span class="resource_title">{{this.title}}</span>
+        <span>{{this.rating}}</span>
+      </p>
+      <form class="inline_item" action="/account/reviewform/" method="get">
+        <button class="add_review_button" type="sumbit" name="resource" value="{{this.title}}">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+      </form>
     </li>
     {{/each}}
   </ul>

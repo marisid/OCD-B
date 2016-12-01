@@ -55,8 +55,6 @@ module.exports = [{
       strategy: 'base'
     },
       handler: (request,reply) => {
-        console.log("the payload from account add review: ",request.payload);
-        console.log("credentials: ",request.auth.credentials);
         let user = encodeURIComponent(request.auth.credentials.user);
         addReview((error) => {
           if(error) throw error;

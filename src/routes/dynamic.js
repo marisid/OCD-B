@@ -48,10 +48,9 @@ module.exports = [{
     },
       handler: (request,reply) => {
         let user = encodeURIComponent(request.auth.credentials.user);
-        console.log(request.payload);
         addReview((error) => {
           if(error) throw error;
-        },request.payload, user, 'THE course');
+        },request.payload, user, 'Learn to Program');
         reply().redirect('/account/');
       }
   }

@@ -9,11 +9,16 @@ header {
   font-weight: bold;
   height: 10vh;
   width: 100vw;
-  background-color: #016064;
+  background-color: rgb(0, 128, 96);
   color: white;
   padding-left: 10px;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .centered{
@@ -68,6 +73,69 @@ header {
 
 .experience_fieldset label {
   font-size: 1.2rem;
+}
+
+.recent_reviews {
+  width: 45vw;
+  float: left;
+  list-style-type: none;
+}
+
+.resources {
+  float: left;
+  clear: both;
+}
+
+.resources_list {
+  padding-left: 0px;
+}
+
+.resource_item {
+  list-style-type: none;
+}
+
+.resource_title {
+  font-weight: bold;
+}
+
+.my_reviews {
+  width: 35vw;
+  float: right;
+  list-style-type: none;
+}
+
+.reviews_list {
+  padding-left: 0px;
+}
+
+.review_item {
+  list-style-type: none;
+  padding-bottom: 12px;
+}
+
+.review_item p {
+  margin: 5px;
+}
+
+.review_rating {
+  color: rgb(0, 128, 96);
+  font-weight: bold;
+}
+
+.review_username {
+  color: rgb(48, 153, 212);
+}
+
+.add_review_button {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  margin: 0px;
+}
+
+.fa-plus-circle {
+  font-size: 1.25rem;
+  color: rgb(0, 128, 96);
 }
 
 .aligned_right {

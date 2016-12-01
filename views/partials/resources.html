@@ -1,9 +1,9 @@
 <section class="resources">
   <h1>Resources</h1>
-  <ul>
+  <ul class="resources_list">
     {{#each resources}}
     <li class="resource_item">
-      <p>{{this.title}} <span>{{this.rating}}</span> <span>Add review</span></p>
+      <p><span class="resource_title">{{this.title}}</span><span>{{this.rating}}</span> <button class="add_review_button" type="button" name="button"><i class="fa fa-plus-circle" aria-hidden="true"></i></button></p>
     </li>
     {{/each}}
   </ul>

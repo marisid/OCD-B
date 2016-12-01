@@ -19,7 +19,6 @@ A platform for writing and sharing reviews of coding resources. Available online
 - Run `npm run build` to build the database
 - Run `npm start` to start the server
 - Navigate to `http://localhost:4000/` in your browser
-- To run the tests, run `npm test`
 
 ## General objectives
 

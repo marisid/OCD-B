@@ -1,4 +1,5 @@
 const getData = require('../getData.js');
+const addReview = require('../addReview.js');
 
 module.exports = [{
   method: 'GET',
@@ -24,4 +25,34 @@ module.exports = [{
         });
       }
     }
+},
+{
+  method: 'GET',
+  path:'/account/reviewform/',
+  config: {
+    auth: {
+      strategy: 'base'
+    },
+      handler: (request,reply) => {
+        let user = encodeURIComponent(request.auth.credentials.user);
+        reply.view('add_review', { user });
+      }
+  }
+},
+{
+  method: 'POST',
+  path:'/account/addreview/',
+  config: {
+    auth: {
+      strategy: 'base'
+    },
+      handler: (request,reply) => {
+        let user = encodeURIComponent(request.auth.credentials.user);
+        console.log(request.payload);
+        addReview((error) => {
+          if(error) throw error;
+        },request.payload, user, 'THE course');
+        reply().redirect('/account/');
+      }
+  }
 }];

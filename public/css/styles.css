@@ -15,7 +15,6 @@ header {
   color: white;
   padding-left: 10px;
   padding-top: 20px;
-  margin-bottom: 20px;
 }
 
 .OCDB {
@@ -93,9 +92,6 @@ header {
 }
 
 /*CSS styles for review form section*/
-.review_section {
-  padding-left: 10px;
-}
 
 .review_input {
   height: 30px;

@@ -126,6 +126,10 @@ header {
   color: rgb(48, 153, 212);
 }
 
+.inline_item {
+  display: inline;
+}
+
 .add_review_button {
   background-color: white;
   cursor: pointer;

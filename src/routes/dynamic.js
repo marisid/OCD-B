@@ -39,8 +39,11 @@ module.exports = [{
       strategy: 'base'
     },
       handler: (request,reply) => {
-        let user = encodeURIComponent(request.auth.credentials.user);
-        reply.view('add_review', { user });
+        let userPageData = {
+          user: encodeURIComponent(request.auth.credentials.user),
+          resource: request.query.resource
+        }
+        reply.view('add_review', userPageData);
       }
   }
 },

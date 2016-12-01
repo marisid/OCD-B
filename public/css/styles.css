@@ -113,6 +113,17 @@ header {
   margin-bottom: 30px;
 }
 
+.selected_resource {
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.review_form_title {
+  margin-bottom: 10px;
+}
+
+/*CSS rules for user account page*/
+
 .recent_reviews {
   width: 45vw;
   float: left;

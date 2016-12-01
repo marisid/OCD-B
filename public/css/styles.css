@@ -23,8 +23,6 @@ header {
   float: right;
   padding-right: 10px;
   text-align: bottom;
-  color: orange;
-  font-weight: lighter;
 }
 
 /*CSS styles for login and register pages*/
@@ -107,6 +105,17 @@ header {
   text-align: left;
   margin-bottom: 30px;
 }
+
+.selected_resource {
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.review_form_title {
+  margin-bottom: 10px;
+}
+
+/*CSS rules for user account page*/
 
 .recent_reviews {
   width: 45vw;

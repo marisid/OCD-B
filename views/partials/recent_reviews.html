@@ -1,11 +1,11 @@
-<section class="">
+<section class="recent_reviews">
   <h1>Recent reviews</h1>
-  <ul>
+  <ul class="reviews_list">
     {{#each recentReviews}}
-    <li class="recent_review_item">
-      <p><span class="recent_review_rating">{{this.rating}}/5</span> - {{this.summary}}</p>
-      <p>on {{this.title}}</p>
-      <p>by {{this.username}}</p>
+    <li class="review_item">
+      <p><span class="review_rating">{{this.rating}}/5</span> - "{{this.summary}}"</p>
+      <p>on <span class="resource_title">{{this.title}}</span></p>
+      <p>by <span class="review_username">{{this.username}}</span></p>
     </li>
     {{/each}}
   </ul>

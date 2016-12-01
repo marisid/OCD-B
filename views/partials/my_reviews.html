@@ -1,0 +1,11 @@
+<aside class="">
+  <h1>My reviews</h1>
+  <ul>
+    {{#each myReviews}}
+    <li class="my_review_item">
+      <p><span class="my_review_rating">{{this.rating}}/5</span> - {{this.summary}}</p>
+      <p>on {{this.title}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</aside>

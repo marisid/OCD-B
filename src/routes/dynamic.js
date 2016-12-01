@@ -11,7 +11,8 @@ module.exports = [{
         let userPageData = {
           recentReviews: {},
           user: encodeURIComponent(request.auth.credentials.user),
-          resources: {}
+          resources: {},
+          myReviews: {}
         }
         getData.recentReviews((error, data) => {
           if (error) throw error;
@@ -20,8 +21,12 @@ module.exports = [{
         getData.resources((error, data) => {
           if (error) throw error;
           userPageData.resources = data;
-          reply.view('index', userPageData);
         });
+        getData.myReviews((error, data) => {
+          if (error) throw error;
+          userPageData.myReviews = data;
+          reply.view('index', userPageData);
+        }, request.auth.credentials.user);
       }
     }
 }];

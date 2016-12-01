@@ -1,0 +1,33 @@
+<div class="review_section">
+  <h1 class="review_form_title">Add your review on {{resource}}</h1>
+  <form id="review_form" action="/account/addreview/" method="post">
+    <label class="input_text_label" for="summary_input">Summary</label>
+    <input type="text" name="summary_input" class="review_input input_field" placeholder="E.g. Great course for beginners!" size="200">
+    <label class="input_text_label" for="summary_input">Description</label>
+    <textarea name="description_input" class="review_textarea input_field" placeholder="Expand on your summary a bit more :-)."></textarea>
+    <fieldset class="rating_fieldset">
+      <legend>Rating (out of 5)</legend>
+        <div class="radio_button_group">
+          <input id="bad_rating" class="btn_radio" type="radio" name="rating" value="1">
+          <label for="bad_rating">Bad (1)</label>
+        </div>
+        <div class="radio_button_group">
+          <input id="not_bad_rating" class="btn_radio" type="radio" name="rating" value="2">
+          <label for="not_bad_rating">Not bad (2)</label>
+        </div>
+        <div class="radio_button_group">
+          <input id="good_rating" class="btn_radio" type="radio" name="rating" value="3">
+          <label for="good_rating">Good (3)</label>
+        </div>
+        <div class="radio_button_group">
+          <input id="very_good_rating" class="btn_radio" type="radio" name="rating" value="4">
+          <label for="very_good_rating">Very good (4)</label>
+        </div>
+        <div class="radio_button_group">
+          <input id="excellent_rating" class="btn_radio" type="radio" name="rating" value="5">
+          <label for="excellent_rating">Excellent (5)</label>
+        </div>
+    </fieldset>
+    <button id="add_review_btn" class="btn_submit" type="submit" name="add_review">Add Review</button>
+  </form>
+</div>

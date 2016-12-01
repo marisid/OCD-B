@@ -10,7 +10,7 @@ module.exports = [{
       handler: (request,reply) => {
         let userPageData = {
           recentReviews: {},
-          user: encodeURIComponent(request.query.user),
+          user: encodeURIComponent(request.auth.credentials.user),
           resources: {}
         }
         getData.recentReviews((error, data) => {

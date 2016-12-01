@@ -3,7 +3,7 @@
   <ul class="reviews_list">
     {{#each recentReviews}}
     <li class="review_item">
-      <p><span class="review_rating">{{this.rating}}/5</span> - "{{this.summary}}"</p>
+      <p><span class="review_stars stars_{{this.rating}}"></span> - "{{this.summary}}"</p>
       <p>on <span class="resource_title">{{this.title}}</span></p>
       <p>by <span class="review_username">{{this.username}}</span></p>
     </li>

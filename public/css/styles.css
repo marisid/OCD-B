@@ -122,6 +122,37 @@ header {
   font-weight: bold;
 }
 
+.review_stars {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_2x-8852bac7bd07ba976a42828c3641f6a896197566._V2_.png);
+  width: 80px;
+  height: 18px;
+  /*position: relative;*/
+  vertical-align: text-top;
+  background-size: 400px 670px;
+  /*background-repeat: no-repeat;*/
+  display: inline-block;
+}
+
+.stars_5 {
+  background-position: -5px -368px;
+}
+
+.stars_4 {
+  background-position: -21px -368px;
+}
+
+.stars_3 {
+  background-position: -37px -368px;
+}
+
+.stars_2 {
+  background-position: -53px -368px;
+}
+
+.stars_1 {
+  background-position: -69px -368px;
+}
+
 .review_username {
   color: rgb(48, 153, 212);
 }

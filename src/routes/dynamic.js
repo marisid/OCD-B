@@ -18,7 +18,7 @@ module.exports = [{
         getData.recentReviews((error, data) => {
           if (error) throw error;
           userPageData.recentReviews = data;
-        });
+        },request.auth.credentials.user);
         getData.resources((error, data) => {
           if (error) throw error;
           userPageData.resources = data;

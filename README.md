@@ -73,8 +73,9 @@ Table 3: Reviews
 
 `/` and `/login` : main page, login page  
 `/register` :  registration page  
-`/account/?user=` : user page  
-`/addreview/?user=...&resource=...` : user page to add resource review
+`/account/?user=` : main user page  
+`/account/addreview/?resource=...` : user page to add resource review   
+`/account/reviewform/`: user page to access review form
 
 ## Testing
 

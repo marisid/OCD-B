@@ -1,4 +1,4 @@
-const dbConn = require('../db_connection');
+const dbConn = require('../database/db_connection');
 
 module.exports = (cb, params, user, resource) => {
   dbConn.query(`SELECT user_id, resource_id FROM users, resources WHERE username=($1) AND title=($2);`,[user, resource], (error, data) => {

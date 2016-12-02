@@ -4,9 +4,9 @@ DROP TABLE IF EXISTS users cascade;
 
 CREATE TABLE users (
   user_id   SERIAL    PRIMARY KEY   NOT NULL,
-  username    VARCHAR(15)   NOT NULL,
-  password    VARCHAR(15)   NOT NULL,
-  experience    VARCHAR(10)
+  username    VARCHAR(100)   NOT NULL,
+  password    VARCHAR(50)   NOT NULL,
+  experience    VARCHAR(30)
 );
 
 INSERT INTO users (username, password, experience) VALUES ('esraajb', 'wilco23', 'beginner');

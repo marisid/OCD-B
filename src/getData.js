@@ -1,4 +1,4 @@
-const dbConn = require('../db_connection');
+const dbConn = require('../database/db_connection');
 
 module.exports = {
   recentReviews: (cb, username) => {

@@ -8,7 +8,7 @@ module.exports = [{
       strategy: 'base'
     },
     handler: (request,reply) => {
-      let user = request.auth.credentials.use;
+      let user = request.auth.credentials.user;
       addReview(request.payload, user, request.payload.resource_title,(error) => {
         if(error) throw error;
         return reply.redirect('/account/');

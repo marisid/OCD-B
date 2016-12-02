@@ -1,6 +1,6 @@
 const dbConn = require('../db_connection');
 
-module.exports = (cb, params, user, resource) => {
+module.exports = (params, user, resource, cb) => {
   dbConn.query(`SELECT user_id, resource_id FROM users, resources WHERE username=($1) AND title=($2);`,[user, resource], (error, data) => {
     if(error) cb(error)
     else {

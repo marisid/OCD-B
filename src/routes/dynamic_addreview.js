@@ -9,10 +9,10 @@ module.exports = [{
     },
     handler: (request,reply) => {
       let user = encodeURIComponent(request.auth.credentials.user);
-      addReview((error) => {
+      addReview(request.payload, user, request.payload.resource_title,(error) => {
         if(error) throw error;
         return reply.redirect('/account/');
-      },request.payload, user, request.payload.resource_title);
+      });
     }
   }
 }];

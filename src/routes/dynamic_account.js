@@ -14,19 +14,19 @@ module.exports = [{
           resources: {},
           myReviews: {}
         }
-        getData.recentReviews((error, data) => {
-          if (error) throw error;
-          userPageData.recentReviews = data;
-        },request.auth.credentials.user);
-        getData.resources((error, data) => {
-          if (error) throw error;
-          userPageData.resources = data;
+        getData.recentReviews(request.auth.credentials.user,(error, reviewsData) => {
+          if (error) console.log(error);
+          userPageData.recentReviews = reviewsData;
+          getData.resources((error, resourcesData) => {
+            if (error) console.log(error);
+            userPageData.resources = resourcesData;
+            getData.myReviews( request.auth.credentials.user,(error, myReviewData) => {
+              if (error) console.log(error);
+              userPageData.myReviews = myReviewData;
+              return reply.view('index', userPageData);
+            });
+          });
         });
-        getData.myReviews((error, data) => {
-          if (error) throw error;
-          userPageData.myReviews = data;
-          return reply.view('index', userPageData);
-        }, request.auth.credentials.user);
       }
     }
 }];

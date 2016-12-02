@@ -10,8 +10,8 @@ A platform for writing and sharing reviews of coding resources. Available online
 - Create database by typing `CREATE DATABASE ocdb`
 - Ask us for the database password
 - Add user 'adminocdb' and assign as the owner of the database:  
-  `CREATE USER adminocdb WITH SUPERUSER PASSWORD password-here`  
-  `ALTER DATABASE ocdb OWNER TO adminocdb`
+  `CREATE USER adminocdb WITH SUPERUSER PASSWORD 'password-here';`  
+  `ALTER DATABASE ocdb OWNER TO adminocdb;`
 - Create a `config.env` file with the following two lines:  
   `export DB_URL = postgres://adminocdb:password-here@localhost:5432/ocdb`  
   `export DB_MAX_CONNECTIONS = 2`  

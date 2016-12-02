@@ -7,7 +7,7 @@ A platform for writing and sharing reviews of coding resources. Available online
 - Clone this repo and `cd` into it
 - Install Postgres ([see here for instructions](https://github.com/dwyl/learn-postgresql))
 - Enter Postgres command line tool (`psql postgres` on Mac)
-- Create database by typing `CREATE DATABASE ocdb`
+- Create database by typing `CREATE DATABASE ocdb;`
 - Ask us for the database password
 - Add user 'adminocdb' and assign as the owner of the database:  
   `CREATE USER adminocdb WITH SUPERUSER PASSWORD 'password-here';`  

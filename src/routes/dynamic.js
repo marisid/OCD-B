@@ -11,7 +11,7 @@ module.exports = [{
       handler: (request,reply) => {
         let userPageData = {
           recentReviews: {},
-          user: encodeURIComponent(request.auth.credentials.user),
+          user: request.auth.credentials.user,
           resources: {},
           myReviews: {}
         }
@@ -40,7 +40,7 @@ module.exports = [{
     },
       handler: (request,reply) => {
         let userPageData = {
-          user: encodeURIComponent(request.auth.credentials.user),
+          user: request.auth.credentials.user),
           resource: request.query.resource
         }
         reply.view('add_review', userPageData);
@@ -55,7 +55,7 @@ module.exports = [{
       strategy: 'base'
     },
       handler: (request,reply) => {
-        let user = encodeURIComponent(request.auth.credentials.user);
+        let user = request.auth.credentials.user;
         addReview((error) => {
           if(error) throw error;
         },request.payload, user, request.payload.resource_title);

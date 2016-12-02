@@ -15,12 +15,12 @@ module.exports = [
     method: 'POST',
     path: '/register',
     handler: (req, reply) => {
-      addUser((err) => {
+      addUser(req.payload, (err) => {
         if(err) {
-          throw(err);
+          console.log("Add user error: ",err);
         }
-      },req.payload)
-      reply().redirect('/login');
+        return reply.redirect('/login');
+      })
     }
   }
-    ];
+];

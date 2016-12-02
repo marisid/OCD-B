@@ -26,17 +26,17 @@ module.exports = [
     path:'/login',
     handler: (req,reply) => {
       // req.cookieAuth.clear(); add logout btn to replace this line
-      validateUser((err,validated)=>{
+      validateUser(req.payload,(err,validated)=>{
         if(err){
-          throw err;
+          console.log("User validation error: ", err);
         }
         if(!validated){
-          reply().redirect('/login');
+          return reply.redirect('/login');
         } else {
           req.cookieAuth.set(req.payload);
-          reply().redirect('/account/')
+          return reply.redirect('/account/')
         }
-      },req.payload);
+      });
     }
 }
 ];

@@ -7,11 +7,11 @@ A platform for writing and sharing reviews of coding resources. Available online
 - Clone this repo and `cd` into it
 - Install Postgres ([see here for instructions](https://github.com/dwyl/learn-postgresql))
 - Enter Postgres command line tool (`psql postgres` on Mac)
-- Create database by typing `CREATE DATABASE ocdb`
+- Create database by typing `CREATE DATABASE ocdb;`
 - Ask us for the database password
 - Add user 'adminocdb' and assign as the owner of the database:  
-  `CREATE USER adminocdb WITH SUPERUSER PASSWORD password-here`  
-  `ALTER DATABASE ocdb OWNER TO adminocdb`
+  `CREATE USER adminocdb WITH SUPERUSER PASSWORD 'password-here';`  
+  `ALTER DATABASE ocdb OWNER TO adminocdb;`
 - Create a `config.env` file with the following two lines:  
   `export DB_URL = postgres://adminocdb:password-here@localhost:5432/ocdb`  
   `export DB_MAX_CONNECTIONS = 2`  
@@ -19,7 +19,6 @@ A platform for writing and sharing reviews of coding resources. Available online
 - Run `npm run build` to build the database
 - Run `npm start` to start the server
 - Navigate to `http://localhost:4000/` in your browser
-- To run the tests, run `npm test`
 
 ## General objectives
 

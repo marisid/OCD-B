@@ -1,6 +1,6 @@
 # OCD-B (Open Code DataBase)
 
-A platform for writing and sharing reviews of coding resources. Available online at ...  
+A platform for writing and sharing reviews of coding resources.
 
 ## Installation instructions
 
